@@ -7,10 +7,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-   <nav className="fixed top-0 left-0 z-50 flex h-20 w-full items-center justify-center bg-black/90 text-white backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 z-50 flex h-20 w-full items-center justify-center bg-black/90 text-white backdrop-blur-sm">
 
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6">
-        <Link to="/" className="flex items-center text-lg font-medium">
+        <Link
+          to="/"
+          className="flex items-center text-lg font-medium focus:outline-none focus:ring-0"
+        >
           <span className="primary-color text-3xl">&lt;</span>
           <span>Vardhan</span>
           <span className="primary-color">/</span>

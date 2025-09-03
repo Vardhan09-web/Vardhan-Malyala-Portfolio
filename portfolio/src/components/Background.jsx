@@ -11,7 +11,6 @@ const Background = () => {
           style={{ backgroundImage: 'linear-gradient(to bottom, #007cf0 1px, transparent 1px)', backgroundSize: '100% 100px' }}>
         </div>
       </div>
-
       <style jsx="true">{`
         @keyframes slide-x {
           from {
