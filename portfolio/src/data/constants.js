@@ -21,6 +21,11 @@ import gitLogo from "../images/logos/git.png";
 import githubLogo from "../images/logos/github.png";
 import vscodeLogo from "../images/logos/vscode.png";
 
+import weatherAppImg from "../images/weather_app.png";
+import hostelImg from "../images/hms.png";   
+import gsapImg from "../images/gsap.png";  
+import corsImg from "../images/cors.png"
+
 export const Bio = {
   name: "Vardhan",
   roles: [
@@ -100,18 +105,11 @@ export const education = [
 export const projects = [
   {
     id: 11,
-    title: "Hostel Mangement System",
+    title: "Hostel Management System",
     description:
-      "Built a HMS app with Django, allowing users and hostel incharges to effecient manage hostel operations w .",
-    image:
-      "",
-    tags: [
-      "HTML5",
-      "CSS",
-      "Django",
-      "MySql"
-
-    ],
+      "Built a HMS app with Django, allowing users and hostel incharges to efficiently manage hostel operations.",
+    image: hostelImg, 
+    tags: ["HTML5", "CSS", "Django", "MySql"],
     category: "web app",
     github: "https://github.com/Vardhan09-web/Hostel-Management-System",
     webapp: "https://github.com/Vardhan09-web/Hostel-Management-System",
@@ -120,34 +118,35 @@ export const projects = [
     id: 12,
     title: "Gsap Project",
     description:
-      "Cocktail Gsap Animation project which shows my fronted skills.",
-    image:
-      "",
-    tags: [
-      "React Js",
-      "GSAP",
-      "Tailwind CSS",
-      "Javascript",
-     
-    ],
+      "Cocktail Gsap Animation project which shows my frontend skills.",
+    image: gsapImg, 
+    tags: ["React Js", "GSAP", "Tailwind CSS", "Javascript"],
     category: "web app",
-    github: "",
+    github: "https://github.com/Vardhan09-web/GSAP-Project-Animations",
+    webapp: "https://gsap-sip-and-scroll.vercel.app/",
+  },
+    {
+    id: 14,
+    title: "Career Opportunity Recommender System",
+    description:
+      "A full-stack career guidance platform built with React, Tailwind CSS, and Spring Boot. It helps students discover suitable career paths by analyzing their subjects, skills, interests, and personality traits.",
+    image: corsImg, 
+    tags: ["React Js", "Tailwind CSS", "Spring Boot", "Java"],
+    category: "web app",
+    github: "https://github.com/saiabhiram3754/CORS-Frontend-",
     webapp: "",
   },
- 
-
   {
     id: 13,
     title: "Weather App",
     description:
       "A responsive and modern weather application built using React and Vite. This app fetches real-time weather data for any city using a public weather API and displays it in an easy-to-read format.",
-    image:
-      "images/weather_app.png",
+    image: weatherAppImg, 
     tags: ["React Js", "Javascript", "WeatherAPI", "CSS3"],
     category: "web app",
     github: "https://github.com/Vardhan09-web/Weather-App",
-    webapp: "https://github.com/Vardhan09-web/Weather-App",
+    webapp: "https://weather-app-mu-gold-50.vercel.app/",
   },
-  
 ];
+
 
