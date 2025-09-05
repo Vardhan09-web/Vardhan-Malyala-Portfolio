@@ -51,7 +51,6 @@ const Hero = () => {
               </span>
             </div>
           </motion.div>
-
           <motion.div {...headContentAnimation}>
             <p className="mb-8 text-lg leading-loose text-gray-300 md:text-xl lg:text-2xl">
               {Bio.description}
