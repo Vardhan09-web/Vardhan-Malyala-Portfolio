@@ -7,10 +7,12 @@ import Projects from './components/Projects.jsx'
 import Education from './components/Education.jsx'
 import Footer from './components/footer.jsx'
 import Contact from './components/Contact.jsx'
+import Intro from './components/Intro.jsx'
 
 const App = () => {
   return (
     <>
+    <Intro/>
       <Background />
       <div className="relative z-10 overflow-x-hidden">
         <Navbar />
