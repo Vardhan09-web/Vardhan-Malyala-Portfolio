@@ -55,7 +55,7 @@ const Projects = () => {
   const handleMouseLeave = () => {
     window.projectInterval = setInterval(() => {
       goToSlide(currentIndex + 1);
-    }, 5000);
+    }, 6000);
   };
 
   return (
@@ -66,7 +66,7 @@ const Projects = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <h2 className="text-3xl sm:text-5xl font-bold text-center mb-6 sm:mb-10">
+    <h2 className="text-3xl sm:text-5xl font-bold text-center sm:mb-10 text-transparent bg-clip-text bg-gradient-to-r from-[#7a0d8a] via-[#c92085] to-[#c68109] drop-shadow-[0_0_12px_rgba(201,32,133,0.8)]">
         My Projects
       </h2>
       <p className="text-sm sm:text-lg text-center font-semibold text-gray-400 mb-8">
@@ -96,7 +96,7 @@ const Projects = () => {
       {/* Project Content */}
       <div className="content flex flex-col md:flex-row items-center gap-8 sm:gap-10 max-w-5xl mx-auto transition-all duration-700 ease-in-out">
         {/* Arrows (hidden on mobile) */}
-        <div className="arrows hidden md:flex flex-col justify-between">
+        {/* <div className="arrows hidden md:flex flex-col justify-between">
           <button
             onClick={() => goToSlide(currentIndex - 1)}
             className="flex items-center gap-2 mb-4 hover:text-primary-color transition"
@@ -110,7 +110,7 @@ const Projects = () => {
           >
             <span>{nextProject.title}</span> <FaChevronRight />
           </button>
-        </div>
+        </div> */}
 
         {/* Project Image */}
         <div className="project-img flex-1 w-full">
@@ -177,8 +177,8 @@ const Projects = () => {
       </div>
 
       {/* Explore More Section */}
-      <div className="w-full flex justify-center mt-12 px-4">
-        <div className="w-full max-w-4xl bg-black/30 p-6 sm:p-10 rounded-2xl 
+      <div className="w-full flex justify-center mt-12 px-2">
+        <div className="w-full max-w-5xl bg-black/30 p-4 sm:p-10 rounded-2xl 
           shadow-lg shadow-primary-color/40 border border-gray-700 
           flex flex-col items-center text-center 
           transition-all duration-300 hover:shadow-primary-color/60 hover:scale-[1.02]">

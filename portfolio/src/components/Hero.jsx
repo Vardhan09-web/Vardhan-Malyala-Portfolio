@@ -1,3 +1,5 @@
+
+
 import { Bio } from "../data/constants";
 import Typewriter from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
@@ -31,8 +33,7 @@ const Hero = () => {
         {...headContainerAnimation}
         className="relative z-10 flex w-full max-w-screen-xl flex-col items-center justify-between md:flex-row"
       >
-        {/* Left Side (Text) */}
-        <div className="order-2 flex w-full flex-col items-center gap-4 text-center md:order-1 md:items-start md:text-left">
+        <div className="order-2 flex w-full flex-col items-center gap-6 text-center md:order-1 md:items-start md:text-left">
           <motion.div {...headTextAnimation}>
             <h1 className="text-[50px] font-bold leading-[68px] text-white md:text-[50px] lg:text-[60px] md:leading-[68px] lg:leading-[78px]">
               Hi, I am <br />{" "}
@@ -51,35 +52,50 @@ const Hero = () => {
               </span>
             </div>
           </motion.div>
+
+          {/* Description */}
           <motion.div {...headContentAnimation}>
-            <p className="mb-8 text-lg leading-loose text-gray-300 md:text-xl lg:text-2xl">
+            <p className="mb-4 text-lg leading-loose text-gray-300 md:text-xl lg:text-2xl">
               {Bio.description}
             </p>
           </motion.div>
-          <motion.a
-            href={Bio.resume}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-primary-color w-full max-w-xs cursor-pointer rounded-full px-8 py-4 text-center text-lg font-semibold text-white 
-                       transition-transform duration-300 ease-in-out hover:scale-105 md:text-xl lg:max-w-md relative z-10"
-            animate={{
-              boxShadow: [
-                "0 0 10px #ff4da6",
-                "0 0 20px #ff4da6",
-                "0 0 10px #ff4da6",
-              ],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          >
-            Download Resume
-          </motion.a>
-        </div>
 
-        <div className="order-1 mb-10 flex w-full justify-center md:order-2 md:mb-0 md:justify-end">
+          <motion.div
+            className="flex flex-col sm:flex-row gap-4 w-full max-w-xs md:max-w-md"
+          >
+  
+            <motion.a
+              href={Bio.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 bg-primary-color cursor-pointer rounded-full px-6 py-3 text-center text-lg font-semibold text-white 
+                         transition-transform duration-300 ease-in-out hover:scale-105"
+              animate={{
+                boxShadow: [
+                  "0 0 10px #ff4da6",
+                  "0 0 20px #ff4da6",
+                  "0 0 10px #ff4da6",
+                ],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              Download Resume
+            </motion.a>
+            <motion.a
+              href="#Contact" 
+              className="flex-1 bg-transparent border-2 border-[#cb337f] rounded-full px-6 py-3 text-center text-lg font-semibold text-[#f34ea0] 
+                         transition-all duration-300 ease-in-out hover:bg-[#ff4da6] hover:text-white hover:scale-105"
+              whileHover={{ boxShadow: "0 0 15px #ff4da6" }}
+            >
+              Contact Me
+            </motion.a>
+          </motion.div>
+        </div>
+        <div className="order-1  mt-5 mb-10 flex w-full justify-center md:order-2 md:mb-0 md:justify-end">
           <motion.div {...headContentAnimation}>
             <Tilt>
               <div className="relative z-0 w-[300px] h-[300px] md:w-[380px] md:h-[380px] lg:w-[400px] lg:h-[400px]">
@@ -95,12 +111,9 @@ const Hero = () => {
                     ease: "easeInOut",
                   }}
                 />
-
                 <div className="absolute inset-0 z-0">
                   <HeroBgAnimation />
                 </div>
-
-                {/* Profile Image */}
                 <img
                   src={myPic}
                   alt="Profile"
@@ -116,3 +129,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

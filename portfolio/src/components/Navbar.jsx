@@ -7,7 +7,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 z-50 flex h-20 w-full items-center justify-center bg-black/90 text-white backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 z-50 flex h-20 w-full items-center justify-center 
+    bg-black/40 backdrop-blur-md border-b border-white/10 shadow-lg text-white">
 
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6">
         <Link
@@ -24,7 +25,7 @@ const Navbar = () => {
           <MenuRounded className="text-white" />
         </div>
         <ul className="hidden gap-8 md:flex">
-  {["About", "Skills", "Projects", "Education", "Contact"].map((item) => (
+  {["About", "Skills", "projects", "education", "Contact"].map((item) => (
     <li key={item}>
       <a
         href={`#${item}`}
