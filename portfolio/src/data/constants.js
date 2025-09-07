@@ -144,7 +144,7 @@ export const projects = [
     tags: ["React Js", "Tailwind CSS", "Spring Boot", "MySql"],
     category: "web app",
     github: "https://github.com/saiabhiram3754/CORS-Frontend-",
-    webapp: "",
+    webapp: "https://github.com/Vardhan09-web/cors-backend",
   },
   {
     id: 13,

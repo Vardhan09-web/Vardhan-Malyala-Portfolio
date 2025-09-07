@@ -1,5 +1,3 @@
-
-
 import { Bio } from "../data/constants";
 import Typewriter from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
