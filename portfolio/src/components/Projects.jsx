@@ -73,7 +73,6 @@ const Projects = () => {
         I have worked on a wide range of projects. Here are some of my good ones.
       </p>
 
-      {/* Navigation Buttons */}
       <nav className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8">
         {projects.map((project, index) => {
           const isActive = index === currentIndex;
@@ -123,8 +122,6 @@ const Projects = () => {
             className="w-full h-56 sm:h-72 object-cover rounded-2xl shadow-lg shadow-primary-color/40"
           />
         </div>
-
-        {/* Project Details */}
         <div className="details flex-1 w-full text-center md:text-left">
           <div ref={contentRef} className="info mb-3">
             <p
@@ -133,8 +130,6 @@ const Projects = () => {
             >
               {currentProject.title}
             </p>
-
-            {/* Tags */}
             <div className="flex flex-wrap gap-2 justify-center md:justify-start mt-2">
               {currentProject.tags?.map((tag, idx) => (
                 <span
@@ -176,7 +171,6 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* Explore More Section */}
       <div className="w-full flex justify-center mt-12 px-2">
         <div className="w-full max-w-5xl bg-black/30 p-4 sm:p-10 rounded-2xl 
           shadow-lg shadow-primary-color/40 border border-gray-700 
@@ -189,7 +183,7 @@ const Projects = () => {
             Ready to collaborate on innovative projects? Let’s build something extraordinary together!
           </p>
           <a
-            href="https://github.com/vardhanmalyala"
+            href="https://github.com/vardhan09-web"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary-color text-white font-semibold py-3 px-6 sm:px-10 

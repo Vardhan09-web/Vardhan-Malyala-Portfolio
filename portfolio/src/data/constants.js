@@ -43,6 +43,7 @@ export const Bio = {
     "https://drive.google.com/file/d/1VfPX4sCIwqHBo2zvkvx0PLl-f8uaXWLS/view?usp=sharing",
   linkedin: "https://linkedin.com/in/vardhan-malyala-b82606294/",
   github:"https://github.com/Vardhan09-web",
+  leetcode:"https://leetcode.com/u/Vardhan_malyala/"
 };
 export const skills = [
   {

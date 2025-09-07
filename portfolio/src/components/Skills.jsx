@@ -49,7 +49,7 @@ import Tilt from "react-parallax-tilt";
 
 const Skills = () => {
     return (
-        <div id="Skills" className="flex flex-col items-center justify-center relative z-10">
+        <div id="skills" className="flex flex-col items-center justify-center relative z-10">
             <div className="flex w-full max-w-screen-xl flex-col items-center justify-between gap-3 md:gap-4 px-4 sm:px-6 lg:px-8">
                 <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-center mt-5 md:mt-12 text-white">
                     Skills

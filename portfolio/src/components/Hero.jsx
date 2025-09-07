@@ -23,7 +23,7 @@ const headContentAnimation = {
 const Hero = () => {
   return (
     <div
-      id="About"
+      id="about"
       className="relative flex w-full justify-center overflow-hidden px-8 py-20 md:py-16 lg:py-20"
       style={{
         clipPath: "polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%)",
@@ -33,7 +33,8 @@ const Hero = () => {
         {...headContainerAnimation}
         className="relative z-10 flex w-full max-w-screen-xl flex-col items-center justify-between md:flex-row"
       >
-        <div className="order-2 flex w-full flex-col items-center gap-6 text-center md:order-1 md:items-start md:text-left">
+        <div className="order-2 flex w-full flex-col items-center gap-6 text-center md:order-1 md:items-start md:text-left md:mt-12">
+
           <motion.div {...headTextAnimation}>
             <h1 className="text-[50px] font-bold leading-[68px] text-white md:text-[50px] lg:text-[60px] md:leading-[68px] lg:leading-[78px]">
               Hi, I am <br />{" "}
@@ -53,7 +54,6 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          {/* Description */}
           <motion.div {...headContentAnimation}>
             <p className="mb-4 text-lg leading-loose text-gray-300 md:text-xl lg:text-2xl">
               {Bio.description}
@@ -63,7 +63,7 @@ const Hero = () => {
           <motion.div
             className="flex flex-col sm:flex-row gap-4 w-full max-w-xs md:max-w-md"
           >
-  
+
             <motion.a
               href={Bio.resume}
               target="_blank"
@@ -86,7 +86,7 @@ const Hero = () => {
               Download Resume
             </motion.a>
             <motion.a
-              href="#Contact" 
+              href="#Contact"
               className="flex-1 bg-transparent border-2 border-[#cb337f] rounded-full px-6 py-3 text-center text-lg font-semibold text-[#f34ea0] 
                          transition-all duration-300 ease-in-out hover:bg-[#ff4da6] hover:text-white hover:scale-105"
               whileHover={{ boxShadow: "0 0 15px #ff4da6" }}
@@ -95,7 +95,8 @@ const Hero = () => {
             </motion.a>
           </motion.div>
         </div>
-        <div className="order-1  mt-5 mb-10 flex w-full justify-center md:order-2 md:mb-0 md:justify-end">
+        <div className="order-1 mb-10 flex w-full justify-center md:order-2 md:mb-0 md:justify-end md:mt-12">
+
           <motion.div {...headContentAnimation}>
             <Tilt>
               <div className="relative z-0 w-[300px] h-[300px] md:w-[380px] md:h-[380px] lg:w-[400px] lg:h-[400px]">

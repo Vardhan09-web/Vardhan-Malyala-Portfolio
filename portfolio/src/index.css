@@ -10,11 +10,10 @@ body {
 }
 
 
-span,
 .primary-color {
   background-image: linear-gradient(to right, #7a0d8a, #c92085, #c68109);
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .bg-primary-color {

@@ -25,18 +25,19 @@ const Navbar = () => {
           <MenuRounded className="text-white" />
         </div>
         <ul className="hidden gap-8 md:flex">
-  {["About", "Skills", "projects", "education", "Contact"].map((item) => (
-    <li key={item}>
-      <a
-        href={`#${item}`}
-        className="relative text-gray-300 transition-colors hover:text-white group"
-      >
-        {item}
-        <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-[#7a0d8a] via-[#c92085] to-[#c68109] transition-all duration-300 group-hover:w-full"></span>
-      </a>
-    </li>
-  ))}
-</ul>
+          {["About", "Skills", "Projects", "Education", "Contact"].map((item) => (
+            <li key={item}>
+              <a
+                href={`#${item.toLowerCase()}`}
+                className="relative text-gray-300 transition-colors hover:text-white group"
+              >
+                {item}
+                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-[#7a0d8a] via-[#c92085] to-[#c68109] transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            </li>
+          ))}
+        </ul>
+
 
 
         <div className="hidden md:block">
@@ -56,19 +57,19 @@ const Navbar = () => {
           className={`absolute right-0 top-20 flex w-full flex-col items-start gap-4 rounded-b-xl bg-black/95 px-10 py-6 text-white shadow-lg transition-transform duration-500 ease-in-out ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}
         >
           <li>
-            <a onClick={() => setIsOpen(false)} href="#About" className="text-gray-300 transition-colors hover:text-[#c92085]">About</a>
+            <a onClick={() => setIsOpen(false)} href="#about" className="text-gray-300 transition-colors hover:text-[#c92085]">About</a>
           </li>
           <li>
-            <a onClick={() => setIsOpen(false)} href="#Skills" className="text-gray-300 transition-colors hover:text-[#c92085]">Skills</a>
+            <a onClick={() => setIsOpen(false)} href="#skills" className="text-gray-300 transition-colors hover:text-[#c92085]">Skills</a>
           </li>
           <li>
-            <a onClick={() => setIsOpen(false)} href="#Projects" className="text-gray-300 transition-colors hover:text-[#c92085]">Projects</a>
+            <a onClick={() => setIsOpen(false)} href="#projects" className="text-gray-300 transition-colors hover:text-[#c92085]">Projects</a>
           </li>
           <li>
-            <a onClick={() => setIsOpen(false)} href="#Education" className="text-gray-300 transition-colors hover:text-[#c92085]">Education</a>
+            <a onClick={() => setIsOpen(false)} href="#education" className="text-gray-300 transition-colors hover:text-[#c92085]">Education</a>
           </li>
           <li>
-            <a onClick={() => setIsOpen(false)} href="#Contact" className="text-gray-300 transition-colors hover:text-[#c92085]">Contact</a>
+            <a onClick={() => setIsOpen(false)} href="#contact" className="text-gray-300 transition-colors hover:text-[#c92085]">Contact</a>
           </li>
           <li>
             <a
