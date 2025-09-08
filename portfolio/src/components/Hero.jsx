@@ -84,7 +84,7 @@ const Hero = () => {
               Download Resume
             </motion.a>
             <motion.a
-              href="#Contact"
+              href="#contact"
               className="flex-1 bg-transparent border-2 border-[#cb337f] rounded-full px-6 py-3 text-center text-lg font-semibold text-[#f34ea0] 
                          transition-all duration-300 ease-in-out hover:bg-[#ff4da6] hover:text-white hover:scale-105"
               whileHover={{ boxShadow: "0 0 15px #ff4da6" }}

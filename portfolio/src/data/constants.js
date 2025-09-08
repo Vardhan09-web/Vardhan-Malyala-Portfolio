@@ -26,7 +26,7 @@ import postmanLogo from "../images/logos/api.png";
 import weatherAppImg from "../images/weather_app.png";
 import hostelImg from "../images/hms1.png";   
 import gsapImg from "../images/gsap.png";  
-import corsImg from "../images/cors.png"
+import corsImg from "../images/cors1.png"
 
 export const Bio = {
   name: "Vardhan",
