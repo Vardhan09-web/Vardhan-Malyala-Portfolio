@@ -21,6 +21,7 @@ const App = () => {
           <Skills/>
           <Projects/>
           <Education/>
+          <Contact/>
         </div>
         <Footer />
       </div>      
