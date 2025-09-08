@@ -5,7 +5,7 @@ import Hero from './components/Hero.jsx'
 import Skills from './components/Skills.jsx'
 import Projects from './components/Projects.jsx'
 import Education from './components/Education.jsx'
-import Footer from './components/footer.jsx'
+import Footer from './components/Footer.jsx'
 import Contact from './components/Contact.jsx'
 import Intro from './components/Intro.jsx'
 
