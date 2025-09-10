@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import myPic from "../images/My_Img.png";
+import myPic from "../images/pic1.jpg";
 
 const words = "Creative Solutions, Driven by Passion.";
 
@@ -100,7 +100,7 @@ const Intro = () => {
           <img
             src={myPic}
             alt="My Profile"
-            className="relative w-full h-full rounded-full object-cover shadow-[0_0_25px_rgba(255,255,255,0.7)]"
+            className="relative w-full h-full rounded-full shadow-[0_0_25px_rgba(255,255,255,0.7)]"
           />
         </div>
         <h1

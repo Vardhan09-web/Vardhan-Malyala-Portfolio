@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import HeroBgAnimation from "./HeroBgAnimation";
-import myPic from "../images/My_Img.png";
+import myPic from "../images/pic1.jpg";
 
 const headContainerAnimation = {
   initial: { opacity: 0, y: 50 },
@@ -116,7 +116,7 @@ const Hero = () => {
                 <img
                   src={myPic}
                   alt="Profile"
-                  className="relative z-10 w-full h-full rounded-full border-2 border-[#4da2ed] object-cover"
+                  className="relative z-10 w-full h-full rounded-full border-2 border-[#4da2ed] "
                 />
               </div>
             </Tilt>
