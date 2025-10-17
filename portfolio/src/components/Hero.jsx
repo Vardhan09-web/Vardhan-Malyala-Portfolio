@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import HeroBgAnimation from "./HeroBgAnimation";
-import myPic from "../images/pic1.jpg";
+import myPic from "../images/pic4.jpg";
 
 const headContainerAnimation = {
   initial: { opacity: 0, y: 50 },
