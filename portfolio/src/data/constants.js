@@ -40,7 +40,7 @@ export const Bio = {
     "I’m a full-stack developer passionate about building clean, user-friendly web applications. I enjoy turning ideas into scalable solutions and continuously improving my skills. Excited to contribute to meaningful projects and grow as a developer.",
   gmail: "vardhanmalyala@gmail.com",
   resume:
-    "https://drive.google.com/file/d/1VfPX4sCIwqHBo2zvkvx0PLl-f8uaXWLS/view?usp=sharing",
+    "https://drive.google.com/file/d/1H6Z1mYlJ9wqchnF2umn6YAZQrlZpVyIq/view?usp=sharing",
   linkedin: "https://linkedin.com/in/vardhan-malyala-b82606294/",
   github:"https://github.com/Vardhan09-web",
   leetcode:"https://leetcode.com/u/Vardhan_malyala/"
